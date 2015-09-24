@@ -44,6 +44,7 @@ platform :ios do
   desc "Submit a new Beta Build to Apple TestFlight"
   desc "This will also make sure the profile is up to date"
   lane :beta do
+    ensure_git_status_clean
     cert
     snapshot
     sigh
@@ -81,7 +82,7 @@ platform :ios do
   end
 
   error do |lane, exception|
-     reset_git_repo
+     #reset_git_repo
      slack(
        message: exception.message,
        success: false
