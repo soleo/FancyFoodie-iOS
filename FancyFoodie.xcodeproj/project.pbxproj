@@ -15,7 +15,6 @@
 		554B892E1BB37FAE00ADC19B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554B892D1BB37FAE00ADC19B /* Assets.xcassets */; };
 		554B89311BB37FAE00ADC19B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554B892F1BB37FAE00ADC19B /* LaunchScreen.storyboard */; };
 		554B893C1BB37FAE00ADC19B /* FancyFoodieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 554B893B1BB37FAE00ADC19B /* FancyFoodieTests.m */; };
-		554B89471BB37FAE00ADC19B /* FancyFoodieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 554B89461BB37FAE00ADC19B /* FancyFoodieUITests.m */; };
 		557128631BB38B980064C847 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557128621BB38B980064C847 /* MapKit.framework */; };
 		AA01DCA138346CF7B723CDD5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBE320564114EC3529E7ACC /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -55,8 +54,6 @@
 		554B893B1BB37FAE00ADC19B /* FancyFoodieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FancyFoodieTests.m; sourceTree = "<group>"; };
 		554B893D1BB37FAE00ADC19B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		554B89421BB37FAE00ADC19B /* FancyFoodieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyFoodieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		554B89461BB37FAE00ADC19B /* FancyFoodieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FancyFoodieUITests.m; sourceTree = "<group>"; };
-		554B89481BB37FAE00ADC19B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		557128621BB38B980064C847 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		557128641BB38BBF0064C847 /* FancyFoodie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FancyFoodie.entitlements; sourceTree = "<group>"; };
 		F31156734697E3EF15FEF802 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +100,6 @@
 			children = (
 				554B891D1BB37FAE00ADC19B /* FancyFoodie */,
 				554B893A1BB37FAE00ADC19B /* FancyFoodieTests */,
-				554B89451BB37FAE00ADC19B /* FancyFoodieUITests */,
 				554B891C1BB37FAE00ADC19B /* Products */,
 				F5DDFA3A75AADA3A1E2C7318 /* Pods */,
 				0E187AA9485BCFD26EB151F5 /* Frameworks */,
@@ -153,15 +149,6 @@
 				554B893D1BB37FAE00ADC19B /* Info.plist */,
 			);
 			path = FancyFoodieTests;
-			sourceTree = "<group>";
-		};
-		554B89451BB37FAE00ADC19B /* FancyFoodieUITests */ = {
-			isa = PBXGroup;
-			children = (
-				554B89461BB37FAE00ADC19B /* FancyFoodieUITests.m */,
-				554B89481BB37FAE00ADC19B /* Info.plist */,
-			);
-			path = FancyFoodieUITests;
 			sourceTree = "<group>";
 		};
 		F5DDFA3A75AADA3A1E2C7318 /* Pods */ = {
@@ -369,7 +356,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				554B89471BB37FAE00ADC19B /* FancyFoodieUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
