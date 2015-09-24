@@ -1,6 +1,7 @@
 language: objective-c
 osx_image: xcode7
-xcode_project: FancyFoodie.xcodeproj
+
+xcode_workspace: FancyFoodie.xcworkspace
 xcode_scheme: FancyFoodie
 xcode_sdk: iphonesimulator
 

@@ -16,6 +16,7 @@
 		554B89311BB37FAE00ADC19B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554B892F1BB37FAE00ADC19B /* LaunchScreen.storyboard */; };
 		554B893C1BB37FAE00ADC19B /* FancyFoodieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 554B893B1BB37FAE00ADC19B /* FancyFoodieTests.m */; };
 		554B89471BB37FAE00ADC19B /* FancyFoodieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 554B89461BB37FAE00ADC19B /* FancyFoodieUITests.m */; };
+		557128631BB38B980064C847 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557128621BB38B980064C847 /* MapKit.framework */; };
 		AA01DCA138346CF7B723CDD5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBE320564114EC3529E7ACC /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		554B89421BB37FAE00ADC19B /* FancyFoodieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyFoodieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		554B89461BB37FAE00ADC19B /* FancyFoodieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FancyFoodieUITests.m; sourceTree = "<group>"; };
 		554B89481BB37FAE00ADC19B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		557128621BB38B980064C847 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		557128641BB38BBF0064C847 /* FancyFoodie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FancyFoodie.entitlements; sourceTree = "<group>"; };
 		F31156734697E3EF15FEF802 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557128631BB38B980064C847 /* MapKit.framework in Frameworks */,
 				AA01DCA138346CF7B723CDD5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +92,7 @@
 		0E187AA9485BCFD26EB151F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				557128621BB38B980064C847 /* MapKit.framework */,
 				4CBE320564114EC3529E7ACC /* libPods.a */,
 			);
 			name = Frameworks;
@@ -118,6 +123,7 @@
 		554B891D1BB37FAE00ADC19B /* FancyFoodie */ = {
 			isa = PBXGroup;
 			children = (
+				557128641BB38BBF0064C847 /* FancyFoodie.entitlements */,
 				554B89211BB37FAE00ADC19B /* AppDelegate.h */,
 				554B89221BB37FAE00ADC19B /* AppDelegate.m */,
 				554B89241BB37FAE00ADC19B /* ViewController.h */,
@@ -236,6 +242,18 @@
 				TargetAttributes = {
 					554B891A1BB37FAE00ADC19B = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 63YV2X6Y4E;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 					554B89361BB37FAE00ADC19B = {
 						CreatedOnToolsVersion = 7.0;
@@ -477,10 +495,14 @@
 			baseConfigurationReference = F31156734697E3EF15FEF802 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FancyFoodie/FancyFoodie.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FancyFoodie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fancy-foodie.FancyFoodie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -489,10 +511,14 @@
 			baseConfigurationReference = 37BE40175AA36AE01439B972 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FancyFoodie/FancyFoodie.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FancyFoodie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fancy-foodie.FancyFoodie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
