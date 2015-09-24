@@ -23,10 +23,13 @@ default_platform :ios
 
 platform :ios do
   before_all do
-    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+    ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
+    
+    ensure_git_status_clean
+
     cocoapods
     
-    # increment_build_number
+    increment_build_number
 
     gym(scheme: "FancyFoodie") # Build your app - more options available
 
@@ -41,6 +44,7 @@ platform :ios do
   desc "Submit a new Beta Build to Apple TestFlight"
   desc "This will also make sure the profile is up to date"
   lane :beta do
+    cert
     snapshot
     sigh
     deliver(beta: true)
@@ -52,27 +56,36 @@ platform :ios do
   desc "Deploy a new version to the App Store"
   desc "** Full Markdown** Support: `code`"
   lane :deploy do
+    cert
+
     snapshot
+    
     sigh
+    
     deliver(skip_deploy: true, force: true)
-    # frameit
+    
+    frameit
   end
 
   # You can define as many lanes as you want
 
   after_all do |lane|
     # This block is called, only if the executed lane was successful
-    
-    # slack(
-    #   message: "Successfully deployed new App Update."
-    # )
+    clean_build_artifacts
+
+    commit_version_bump
+
+     slack(
+       message: "Successfully deployed new App Update."
+     )
   end
 
   error do |lane, exception|
-    # slack(
-    #   message: exception.message,
-    #   success: false
-    # )
+     reset_git_repo
+     slack(
+       message: exception.message,
+       success: false
+     )
   end
 end
 
