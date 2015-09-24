@@ -25,13 +25,13 @@ platform :ios do
   before_all do
     ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
     
-    ensure_git_status_clean
+    #ensure_git_status_clean
 
     cocoapods
     
     increment_build_number
 
-    gym(scheme: "FancyFoodie") # Build your app - more options available
+    gym(scheme: "FancyFoodie", workspace: "FancyFoodie.xcworkspace") # Build your app - more options available
 
     # xctool # run the tests of your app
   end
@@ -73,7 +73,7 @@ platform :ios do
     # This block is called, only if the executed lane was successful
     clean_build_artifacts
 
-    commit_version_bump
+    #commit_version_bump
 
      slack(
        message: "Successfully deployed new App Update."
@@ -81,7 +81,7 @@ platform :ios do
   end
 
   error do |lane, exception|
-     reset_git_repo
+     #reset_git_repo
      slack(
        message: exception.message,
        success: false
