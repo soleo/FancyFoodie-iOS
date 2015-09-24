@@ -1,10 +1,11 @@
 language: objective-c
 osx_image: xcode7
-
 xcode_workspace: FancyFoodie.xcworkspace
 xcode_scheme: FancyFoodie
 xcode_sdk: iphonesimulator
-
 before_install:
-    - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-    - pod install
+- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+- pod install
+notifications:
+  slack:
+    secure: OhXbWYWWkEKsmAwD9Gu8rEHfI+d3LWpkne+huu8hNOjyIpZHRFQpOVIl+/As23CR6zyZvjfNF5L0IHZ6tj3ttFgExdTaCo/Y5ahQ3P1quj79i7xoIQxbG1Toyp8Fk7uA1+IkIRJ6Va0E2Zn9qiQff12qTQpf4VjeCvZyWt5FkGfnqXTeFQLL/c8aarprlzeQYtojX1WzAHSDmoK03LwBHksUqNhQsYRswZ4FyFdM8vy6cJ94Y8TEm0T59j3JLeEf0jOIvc5Z/gpef1d1tLzQpbTR4ls3DWE6NyouPwKxcmclOQa4dFclsKBI0MxmB2s0JJW/08hDOWMEf3jSe8Am/IOPlCjXaJvY6GMKcdQDftHzZmpEFyWzSXSiNxCAjhICuCwepoMtf476RhRw+R1XH6uSUY8Co+HkU9SOzrwZuqU1mDMDToXZuibxfR25PvZYvLBu2WTt/mcN4FTxSYza98/ht1iTR3vRTF55QbylgPUDPWrPtTh1+84ZjAIKSZtbBD8Ks7ehlQg8sDBWWzpyS1xcw96ni3eOd4n3th4uquy/f1emrml2EUJjZJVKnAbuE+CTEvFF1Ry8T1XEgK8VOFPMIf5zKm5LOTMcx/8p+eSq2ZYvNtus326Shc54O8i4UylLVaPCBtLQdw4Sfitmz4QRTF4rabEX5dENu+MMhFk=
