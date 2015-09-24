@@ -82,7 +82,7 @@ platform :ios do
   end
 
   error do |lane, exception|
-     #reset_git_repo
+     reset_git_repo
      slack(
        message: exception.message,
        success: false
