@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41C8676C439281590B6A9EB6 /* libPods-FancyFoodie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D22D306D36273C6256339F /* libPods-FancyFoodie.a */; };
 		554B89201BB37FAE00ADC19B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 554B891F1BB37FAE00ADC19B /* main.m */; };
 		554B89231BB37FAE00ADC19B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 554B89221BB37FAE00ADC19B /* AppDelegate.m */; };
 		554B89261BB37FAE00ADC19B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554B89251BB37FAE00ADC19B /* ViewController.m */; };
@@ -16,7 +17,8 @@
 		554B89311BB37FAE00ADC19B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554B892F1BB37FAE00ADC19B /* LaunchScreen.storyboard */; };
 		554B893C1BB37FAE00ADC19B /* FancyFoodieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 554B893B1BB37FAE00ADC19B /* FancyFoodieTests.m */; };
 		557128631BB38B980064C847 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557128621BB38B980064C847 /* MapKit.framework */; };
-		AA01DCA138346CF7B723CDD5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBE320564114EC3529E7ACC /* libPods.a */; };
+		559A2BFD1BB64DAB0078688F /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 559A2BFC1BB64DAB0078688F /* LogInViewController.m */; settings = {ASSET_TAGS = (); }; };
+		559A2C021BB64DE20078688F /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 559A2C011BB64DE20078688F /* SignUpViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 
 /* Begin PBXFileReference section */
 		37BE40175AA36AE01439B972 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		4CBE320564114EC3529E7ACC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		554B891B1BB37FAE00ADC19B /* FancyFoodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FancyFoodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		554B891F1BB37FAE00ADC19B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		554B89211BB37FAE00ADC19B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,7 +57,15 @@
 		554B89421BB37FAE00ADC19B /* FancyFoodieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyFoodieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		557128621BB38B980064C847 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		557128641BB38BBF0064C847 /* FancyFoodie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FancyFoodie.entitlements; sourceTree = "<group>"; };
+		559A2BFB1BB64DAB0078688F /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogInViewController.h; path = Classes/Controller/LogInViewController.h; sourceTree = "<group>"; };
+		559A2BFC1BB64DAB0078688F /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogInViewController.m; path = Classes/Controller/LogInViewController.m; sourceTree = "<group>"; };
+		559A2C001BB64DE20078688F /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignUpViewController.h; path = Classes/Controller/SignUpViewController.h; sourceTree = "<group>"; };
+		559A2C011BB64DE20078688F /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignUpViewController.m; path = Classes/Controller/SignUpViewController.m; sourceTree = "<group>"; };
+		559A2C041BB64E0F0078688F /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = FancyFoodie/Constants.h; sourceTree = "<group>"; };
+		EABA3A1DCE783A4522186A39 /* Pods-FancyFoodie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyFoodie.release.xcconfig"; path = "Pods/Target Support Files/Pods-FancyFoodie/Pods-FancyFoodie.release.xcconfig"; sourceTree = "<group>"; };
 		F31156734697E3EF15FEF802 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F6D22D306D36273C6256339F /* libPods-FancyFoodie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FancyFoodie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA16F484D628F178EA2BB81B /* Pods-FancyFoodie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyFoodie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FancyFoodie/Pods-FancyFoodie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				557128631BB38B980064C847 /* MapKit.framework in Frameworks */,
-				AA01DCA138346CF7B723CDD5 /* libPods.a in Frameworks */,
+				41C8676C439281590B6A9EB6 /* libPods-FancyFoodie.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				557128621BB38B980064C847 /* MapKit.framework */,
-				4CBE320564114EC3529E7ACC /* libPods.a */,
+				F6D22D306D36273C6256339F /* libPods-FancyFoodie.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,6 +107,9 @@
 		554B89121BB37FAE00ADC19B = {
 			isa = PBXGroup;
 			children = (
+				559A2C031BB64DF60078688F /* Common */,
+				559A2BFF1BB64DC90078688F /* SignUp */,
+				559A2BFE1BB64DB20078688F /* LogIn */,
 				554B891D1BB37FAE00ADC19B /* FancyFoodie */,
 				554B893A1BB37FAE00ADC19B /* FancyFoodieTests */,
 				554B891C1BB37FAE00ADC19B /* Products */,
@@ -151,11 +163,39 @@
 			path = FancyFoodieTests;
 			sourceTree = "<group>";
 		};
+		559A2BFE1BB64DB20078688F /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				559A2BFB1BB64DAB0078688F /* LogInViewController.h */,
+				559A2BFC1BB64DAB0078688F /* LogInViewController.m */,
+			);
+			name = LogIn;
+			sourceTree = "<group>";
+		};
+		559A2BFF1BB64DC90078688F /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				559A2C001BB64DE20078688F /* SignUpViewController.h */,
+				559A2C011BB64DE20078688F /* SignUpViewController.m */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		559A2C031BB64DF60078688F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				559A2C041BB64E0F0078688F /* Constants.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		F5DDFA3A75AADA3A1E2C7318 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				F31156734697E3EF15FEF802 /* Pods.debug.xcconfig */,
 				37BE40175AA36AE01439B972 /* Pods.release.xcconfig */,
+				FA16F484D628F178EA2BB81B /* Pods-FancyFoodie.debug.xcconfig */,
+				EABA3A1DCE783A4522186A39 /* Pods-FancyFoodie.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -327,7 +367,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FancyFoodie/Pods-FancyFoodie-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -339,6 +379,8 @@
 			files = (
 				554B89261BB37FAE00ADC19B /* ViewController.m in Sources */,
 				554B89231BB37FAE00ADC19B /* AppDelegate.m in Sources */,
+				559A2C021BB64DE20078688F /* SignUpViewController.m in Sources */,
+				559A2BFD1BB64DAB0078688F /* LogInViewController.m in Sources */,
 				554B89201BB37FAE00ADC19B /* main.m in Sources */,
 				554B892C1BB37FAE00ADC19B /* FancyFoodie.xcdatamodeld in Sources */,
 			);
@@ -431,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -470,7 +512,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,7 +522,7 @@
 		};
 		554B894C1BB37FAE00ADC19B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F31156734697E3EF15FEF802 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = FA16F484D628F178EA2BB81B /* Pods-FancyFoodie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
@@ -498,7 +540,7 @@
 		};
 		554B894D1BB37FAE00ADC19B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37BE40175AA36AE01439B972 /* Pods.release.xcconfig */;
+			baseConfigurationReference = EABA3A1DCE783A4522186A39 /* Pods-FancyFoodie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
