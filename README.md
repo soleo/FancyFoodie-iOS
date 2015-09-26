@@ -1,3 +1,4 @@
+![](Assets/fancyfoodie_text.png?raw=true)
 # FancyFoodie-iOS
 [![Build Status](https://travis-ci.org/FancyFoodie/FancyFoodie-iOS.svg)](https://travis-ci.org/FancyFoodie/FancyFoodie-iOS)
 
